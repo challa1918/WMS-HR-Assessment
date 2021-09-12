@@ -16,7 +16,7 @@
             array_push($months,date("n",strtotime("2021-".$value)));
             echo nl2br($key." ".$value."\n");
         }
-       // echo nl2br(Print_r($months)."\n");
+   
     }
     $in_date= $_GET["date"];
     $in_month= date("n",strtotime($in_date));
@@ -25,7 +25,6 @@
     while($k<=5){
         $start=$months[++$k];
         $end=$months[++$k];
-        echo "Quarter : ".$quarter;
         if(getQuarter($start,$end,$in_month)){
             echo "The  date ".$in_date." falls in Quarter $quarter";
             break;
