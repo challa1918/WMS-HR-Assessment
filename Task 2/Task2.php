@@ -18,5 +18,5 @@ return true;
 }
 </script>
 
-<h3><a href='delete.php?confirm=$confirm' onclick="return confirmationFn()" >Delete</a></h>
+<h3><a href='Task2.php?confirm=$confirm' onclick="return confirmationFn()" >Delete</a></h>
 </html>
