@@ -4,7 +4,8 @@
  
  if (isset($_GET['confirm'])) {
     echo '<script>alert("Data deleted Successfully !!")</script>';
-  }
+  }  
+   echo "<h3><a href='Task2.php?confirm=$confirm' onclick='return confirmationFn()' >Delete</a></h3>";
 ?>
 <script>
 function confirmationFn() {
@@ -18,5 +19,4 @@ return true;
 }
 </script>
 
-<h3><a href='Task2.php?confirm=$confirm' onclick="return confirmationFn()" >Delete</a></h>
 </html>
